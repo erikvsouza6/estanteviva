@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estante Viva</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -24,14 +25,72 @@
     <form action="">
         <h3>Cadastrar livro</h3>
         <div>
-            <label for="título">Título</label>
+            <label for="título">Título *</label>
             <input type="text" placeholder="informe o Título">
         </div>
 
-        <d
+        <div>
+            <lable for="auto">Auto *</lable>
+            <input type="text" placeholder="informe o autor">
+        </div>
 
+        <div>
+            <label for="preço (R$)">Preço (R$) *</label>
+            <input type="text" placeholder="0.00">
+        </div>
+
+        <div>
+            <label for="quantidade em estoque">quantidade em estoque *</label>
+            <input type="text" placeholder="0">
+            <button type="submit">Cadastrar livro</button>
+        </div>
+        <p>Area para mensagens de sucesso ou erro</p>
     </form>
+    <section>
+        <h3>Catálogo de livros</h3>
+        <label for="Buscar por parte do título"></label>
+        <input type="text" placeholder="Buscar por parte do título">
+        <button>Buscar</button>
+        <button>Limpar</button>
+    </section>
+    <br><br>
 
+    <table>
+        <thead>
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Preço</th>
+            <th>Estoque</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Título cadastrado</td>
+            <td>Nome do autor</td>
+            <td>R$ 0.00</td>
+            <td>0</td>
+            <td>
+                <button>Editar</button>
+                <button>Excluir</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Título cadastrado</td>
+            <td>Nome do autor</td>
+            <td>R$ 0.00</td>
+            <td>0</td>
+            <td>
+                <button>Editar</button>
+                <button>Excluir</button>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+
+    <P>Sem registros: “Nenhum livro encontrado.”</P>
+
+    <p>Estante Viva — Gerenciamento de catálogo</p>
 </body>
-
 </html>
