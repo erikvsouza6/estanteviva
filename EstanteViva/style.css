@@ -12,7 +12,8 @@ body {
     color: #333333;
 }
 
-nav, footer {
+nav,
+footer {
     background-color: #245C46;
     color: #FFFFFF;
     border: 1px solid #999;
@@ -46,20 +47,32 @@ form {
     background: #EEEEEE;
     border: 1px solid #999;
     padding: 15px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 10px 18px;
+
 }
 
-form h3, form::after {
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formulario-linha {
+    display: flex;
+}
+
+form h3,
+form::after {
     grid-column: 1/ -1;
 }
 
-.titulo,.autor {
+.titulo,
+.autor {
     grid-column: span 3;
 }
 
-.preco, .quantidade_estoque, .batao_cadastrar {
+.preco,
+.quantidade_estoque,
+.batao_cadastrar {
     grid-column: span 2;
 }
 
@@ -75,7 +88,7 @@ input {
 }
 
 .batao_cadastrar {
-    height: 34px;
+    height: 35px;
     align-self: end;
 }
 
@@ -99,12 +112,14 @@ section h3 {
     grid-column: 1/ -1;
 }
 
-.botao_buscar, .botao_limpar {
+.botao_buscar,
+.botao_limpar {
     min-width: 102px;
     height: 35px;
 }
 
-th, td {
+th,
+td {
     border-bottom: 1px solid #999;
     padding: 7px 10px;
     text-align: left;
@@ -126,8 +141,10 @@ td button {
 }
 
 footer {
+    display: flex;
     justify-content: center;
-    margin-top: 10px;
-    font-size: 13px;
+    align-items: center;
+    width: 100%;
+    margin: 40px 0;
+    padding: 20px;
 }
-
